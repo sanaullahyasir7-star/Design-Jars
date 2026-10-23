@@ -1,7 +1,7 @@
 # Design Jars
 
-Official static website source for Design Jars.
+Official website for the Design Jars creative studio.
 
-## Local preview
+GitHub Pages is configured through the workflow in `.github/workflows/pages.yml`.
 
-Serve this folder with any static HTTP server. GitHub Pages deployment uses the `pages.yml` workflow.
+For local preview, serve this folder with a static HTTP server, for example `python -m http.server 8000`.
