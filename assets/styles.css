@@ -32,3 +32,7 @@ body{background-color:var(--bg);background-image:radial-gradient(ellipse 520px 4
 
 /* Jar Lab result actions: preserve readable contrast on light secondary buttons. */
 .lab-copy{color:#f7f9fc!important;background:#15191f!important;border-color:rgba(255,255,255,.22)!important}.lab-copy:hover{color:#fff!important;background:rgba(0,153,255,.18)!important;border-color:var(--accent)!important}
+
+
+/* Mobile Jar Lab: stack cleanly and prevent form/result overflow. */
+@media(max-width:767px){.jar-lab-section .container{width:calc(100% - 32px);min-width:0}.jar-lab-section .section-heading{margin-bottom:26px}.jar-lab-section .section-heading h2{font-size:clamp(2.15rem,10vw,3.2rem)}.jar-lab-grid{grid-template-columns:minmax(0,1fr);gap:14px;min-width:0}.jar-lab-form,.jar-lab-output{width:100%;min-width:0;padding:20px;border-radius:20px}.jar-lab-form{display:grid;grid-template-columns:minmax(0,1fr);gap:9px}.jar-lab-form>*{min-width:0}.jar-lab-form input,.jar-lab-form select{width:100%;min-width:0;max-width:100%;font-size:16px}.jar-lab-output{min-height:0}.lab-result{min-width:0;overflow-wrap:anywhere}.lab-result-top{align-items:flex-start;flex-wrap:wrap}.lab-result h3{overflow-wrap:anywhere}.lab-direction p{overflow-wrap:anywhere}.lab-cta,.lab-copy,.lab-submit{width:100%;justify-content:center}.lab-palette{gap:8px}.lab-swatch{width:38px;height:38px}.lab-swatch span{font-size:.58rem}}
