@@ -20,3 +20,8 @@ body:before{content:"";position:absolute;z-index:-1;pointer-events:none;inset:0 
 .site-footer{position:relative;isolation:isolate;background:transparent;overflow:hidden}
 .site-footer:before{content:"";position:absolute;z-index:-1;pointer-events:none;width:min(800px,90vw);height:520px;left:50%;top:-170px;transform:translateX(-50%);background:radial-gradient(ellipse at 50% 50%,rgba(0,153,255,.22),rgba(20,95,180,.11) 38%,transparent 72%);filter:blur(32px)}
 @media(prefers-reduced-motion:reduce){body:before,.site-footer:before{filter:blur(18px)}}
+
+
+/* Visible glow layer: keep the light in the body background so sections render above it. */
+body{background-color:var(--bg);background-image:radial-gradient(ellipse 520px 440px at 52% 8%,rgba(0,153,255,.22),transparent 76%),radial-gradient(ellipse 560px 460px at 14% 48%,rgba(0,115,255,.13),transparent 76%),radial-gradient(ellipse 560px 460px at 88% 78%,rgba(27,102,220,.14),transparent 78%);background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed}
+.site-footer{background:radial-gradient(ellipse 620px 440px at 50% 12%,rgba(0,153,255,.25),rgba(18,75,135,.10) 46%,transparent 78%),#080808}
