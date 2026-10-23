@@ -141,3 +141,7 @@ body{background-color:var(--bg);background-image:radial-gradient(ellipse 520px 4
  .results-track,.quote-track,.team-track{animation:none!important;transform:none!important;translate:none!important}
  .marquee-shell,.team-shell{scroll-behavior:auto}
 }
+
+
+/* Text label replaces the decorative up-arrow in the floating control. */
+.to-top{font-size:.72rem;letter-spacing:.02em}
